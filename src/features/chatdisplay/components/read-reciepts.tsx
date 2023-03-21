@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import React from 'react'
 
-export const reciept = styled.p`
+const reciept = styled.p`
 		width: 13px;
 		height: 13px;
 		border-radius: 13px;
@@ -9,3 +10,10 @@ export const reciept = styled.p`
 		background-position: center;
 
 `
+
+export const read_reciept = () =>{
+
+	return(
+		<h1>read_reciept</h1>
+	)
+}
