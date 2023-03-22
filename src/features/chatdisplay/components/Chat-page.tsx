@@ -5,6 +5,8 @@ import {MessageContainer} from './MessageContainer'
 
 export const Chat_page = () =>{
 
+
+	
 	return(
 	<div>
 		<MessageContainer>
