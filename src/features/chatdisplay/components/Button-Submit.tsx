@@ -1,16 +1,17 @@
 import styled from 'styled-components';
 import React from 'react';
 
-export const ButtonSubmit = styled.button`
-	background-color: #FFFFFF;
-	position: absolute;
-	right: 1px;
-	bottom: 1px;
+export const Message_button = styled.button`
 
-	margin: 1em;
-	border-radius: 8px;
-	border: none;
+
 `;
+
+export const Message_text = styled.input`
+
+
+	
+`;
+
 
 export const Submit_bt = () =>{
 
@@ -18,7 +19,7 @@ export const Submit_bt = () =>{
 
 	
 	return(
-		<ButtonSubmit type="submit">Subimt Message</ButtonSubmit>
+		<Message_button type="submit">Submit Message</Message_button>
 	)
 }
 
