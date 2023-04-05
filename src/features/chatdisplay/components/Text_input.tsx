@@ -6,9 +6,10 @@ import styled from 'styled-components';
 const Text_input = styled.input`
 	background-color: transparent;    
 
-	color: black;
 	font-size: 18px;
 
+	padding: 10px;
+	margin: 10px;
 `;
 
 

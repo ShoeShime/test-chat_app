@@ -28,7 +28,7 @@ export function Chat_Room(){
 				Vendor Name
 			</Message_header>
 
-				<div>input messages here</div>
+				<div>Message Pop-ups here</div>
 
 			<MessageInput/>
 		</M_body>

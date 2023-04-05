@@ -10,10 +10,12 @@ const MessageBody = styled.body`
 	background-color: #FFFFFF;
 	border-radius: 10px;
 
-	gap: 20px;
-
 	bottom: 3%;
 	right: 40%;
+
+	height: 7vh;
+	display: flex;
+	gap: 20px;
 `;
 
 //Include Message parameter (?)
