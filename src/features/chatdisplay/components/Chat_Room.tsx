@@ -1,28 +1,22 @@
 import React from "react";
 import styled from 'styled-components';
-import {Message_text, Message_button} from "./Button-Submit"
+import MessageInput from "./Message";
 
-//
-const MessageBody = styled.form`
-	position: sticky
-
-
-`;
-
+//Header, Top of the Page
 const Message_header = styled.header`
-	position: sticky
 
-	
+	font-weight: bold;
+	font-size: 25px;
+
+	text-align: center;
 `;
 
+//Background
 const M_body = styled.body`
 	background-color: #d2d2d4;
 
-	height: 100%;
-	width: 100%;
-	position: absolute
+	height: 100vh;
 `;
-
 
 export function Chat_Room(){
 
@@ -31,15 +25,15 @@ export function Chat_Room(){
 	<>
 		<M_body>
 			<Message_header>
-				<p>Vendor Name Here</p>
+				Vendor Name
 			</Message_header>
 
+				<div>input messages here</div>
 
-			<MessageBody>
-				<Message_text></Message_text>
-				<Message_button>Send</Message_button>
-			</MessageBody>
+			<MessageInput/>
 		</M_body>
 	</>
 	)
 }
+
+export default Chat_Room;

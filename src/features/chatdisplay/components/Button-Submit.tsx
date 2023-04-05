@@ -3,24 +3,25 @@ import React from 'react';
 
 export const Message_button = styled.button`
 
+	background-color: #000000;
+	color: #FFFFFF;
 
-`;
+	font-size: 15px;
+	cursor: pointer;
 
-export const Message_text = styled.input`
-
-
-	
-`;
+	border-radius: 20%;
+`;	
 
 
-export const Submit_bt = () =>{
+//Include Message parameter (?)
+const Submit_bt = async() =>{
+
 
 	console.log("hello world")
 
-	
 	return(
-		<Message_button type="submit">Submit Message</Message_button>
+		<Message_button onClick={Submit_bt}></Message_button>
 	)
 }
 
-export default Submit_bt;
+export default Message_button	;
