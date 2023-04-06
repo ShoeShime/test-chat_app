@@ -10,7 +10,7 @@ export const SideBar = () =>{
 
 	return(
 		<div>
-			<Reciept>read_reciept</Reciept>
+		
 		</div>
 	)
 }
