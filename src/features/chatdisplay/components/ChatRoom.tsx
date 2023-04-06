@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import styled from 'styled-components';
-import ChatHeader from "./ChatHeader"
+import ChatHeader from "./ChatHeader_Room"
 import Message from "./Message";
 import Messages from "./Messages";
 

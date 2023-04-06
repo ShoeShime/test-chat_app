@@ -17,7 +17,7 @@ const MyName = styled.p`
 	font-size: 28px;
 `;
 
-const ChatHeader = () =>{
+const ChatHeader_Room = () =>{
 
 
 	return(
@@ -27,4 +27,4 @@ const ChatHeader = () =>{
 	);
 }
 
-export default ChatHeader;
+export default ChatHeader_Room;
