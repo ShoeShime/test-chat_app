@@ -2,13 +2,16 @@
 import React from 'react';
 import './App.css';
 
-import {Chat_page} from './features/chatdisplay/components/Chat_page'
-import {Chat_Room} from './features/chatdisplay/components/Chat_Room'
+//import {ChatPage} from './features/Chatpages/components/Chatpage'
+import {ChatRoom} from './features/ChatDisplay/components/ChatRoom'
+
 
 function App() {
+
   return (
-      <Chat_Room/>
+    <ChatRoom/>
   );
 }
+
 
 export default App;

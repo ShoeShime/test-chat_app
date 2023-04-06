@@ -1,34 +1,56 @@
-import React from 'react';
-import styled from 'styled-components';
-import {Message_button} from "./Button-Submit"
-import Text_input from "./Text_input";
+import React, {useState} from "react";	
+import styled from "styled-components";
+import SendButton from "./SendButton";
+import MessageInput from "./MessageInput";
 
-//Message, Located on the bottom of the page
-const MessageBody = styled.body`
-	position: absolute;
+const MessageContainer = styled.div`
+	position: fixed;
+	background-color: #8B4000;
 
-	background-color: #FFFFFF;
-	border-radius: 10px;
-
-	bottom: 3%;
-	right: 40%;
-
-	height: 7vh;
 	display: flex;
+
+	align-items: center;
+	justify-content: space-between;
+
+	padding: 10px;
+	box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1);
+
+	bottom: 0;
+	width: 100%;
+`;
+
+const MessageForm = styled.form`
+	background-color: #FFA500;
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+
+	border-radius: 10px;
+	padding: 10px;
+
+	margin-right: 20px;
 	gap: 20px;
 `;
 
-//Include Message parameter (?)
-const MessageInput = () =>{
 
+const Message = () =>{
+	
 
 
 	return(
-		<MessageBody>
-			<Text_input/>
-			<Message_button>Send</Message_button>
-		</MessageBody>
+		<MessageContainer>
+			<MessageForm >
+				<MessageInput 
+					placeholder="Type your message here"
+					
+
+				/>
+	
+				<SendButton type="submit">Send</SendButton>
+			</MessageForm>
+		</MessageContainer>
 	);
 }
 
-export default MessageInput;
+export default Message;
