@@ -9,8 +9,8 @@ import {ChatRoom} from './features/ChatDisplay/components/ChatRoom';
 function App() {
 
   return (
-    <ChatPage/>
-  );
+    <ChatRoom/>
+  );  
 }
 
 

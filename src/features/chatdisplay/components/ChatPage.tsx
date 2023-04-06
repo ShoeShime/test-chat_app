@@ -6,7 +6,10 @@ import ChatHeader_Page from "./ChatHeader_Page";
 const M_body = styled.body`
 	background-color: #d2d2d4;
 
-	height: 100vh;
+	display: flex;
+
+
+	height: 90vh;
 	text-align: center;
 `;
 
@@ -17,7 +20,9 @@ export function ChatPage(){
 		<M_body>
 			<ChatHeader_Page/>
 
-
+			<p>messages part</p>
+			
+			<p>bottom part</p>
 		</M_body>
 	);
 }
