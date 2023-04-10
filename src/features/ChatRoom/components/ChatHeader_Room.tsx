@@ -22,7 +22,9 @@ const ChatHeader_Room = () =>{
 
 	return(
 	<Message_header>
+
 		<MyName>Vendor Name</MyName>
+		
 	</Message_header>
 	);
 }

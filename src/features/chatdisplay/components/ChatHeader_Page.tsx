@@ -1,45 +1,60 @@
 import React from "react";
 import styled from "styled-components";
-import Search_Message from "./Search_Message";
+import SearchMessage from "./SearchMessage";
+import ThumbsUp from "../misc/ThumbsUp.jpg";
 
 //Header, Top of the Page
-const Message_header = styled.header`
-	position: absolute;
+const MessageHeader = styled.header`
 	background-color: #FFA500;
 
-	text-align: left;
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+	justify-content: center;
+	align-items: flex-start;
+
+	padding: 20px;
+`;
+
+const HeaderContainer = styled.div`
+	display: flex;
+
+	align-items: center;
+	justify-content: space-between;
+
 	width: 100%;
-
-	padding: 10px;
 `;
 
-const Message_Title = styled.p`
-
+const MessageTitle = styled.p`
+	font-size: 2em;
 	font-weight: bold;
-	font-size: 20px;
 
-	display: inline-block;
-
+	margin-top: 0;
 `;
 
-const Message_Img = styled.img`
-	display: inline-block;
+const MessageImg = styled.img`
+	width: 50px;
+	height: 50px;
 
-	border-radius: 20px;
-
+	margin-left: 15px;
+	border-radius: 50%;
 `;
 
 const ChatHeader_Page = () =>{
 
 	return(
-		<Message_header>
-			<Message_Title>Messages</Message_Title>
+		<MessageHeader>
+			<HeaderContainer>
+				<MessageTitle>Messages</MessageTitle>
 
-			<Message_Img/>
+				<MessageImg src={ThumbsUp}/>
 
-			<Search_Message/>
+			</HeaderContainer>
 
-		</Message_header>
+			<SearchMessage/>
+
+		</MessageHeader>
 	);
 }
 

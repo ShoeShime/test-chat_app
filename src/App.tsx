@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 
 import {ChatPage} from './features/ChatDisplay/components/ChatPage';
-import {ChatRoom} from './features/ChatDisplay/components/ChatRoom';
+import {ChatRoom} from './features/ChatRoom/components/ChatRoom';
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
   
   return (
 
-    <ChatRoom/>
+    <ChatPage/>
 
   );  
 }

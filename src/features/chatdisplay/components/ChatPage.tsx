@@ -1,29 +1,30 @@
 import React from "react";
 import styled from "styled-components";
 import ChatHeader_Page from "./ChatHeader_Page";
+import MessageBox from "./MessageBox";
+
 
 //Background
-const M_body = styled.body`
+const ChatPageBody = styled.body`
+	position: fixed;
 	background-color: #d2d2d4;
 
-	display: flex;
 
-
-	height: 90vh;
-	text-align: center;
+	height: 100%;
+	width: 100%;
 `;
 
 export function ChatPage(){
 
 
 	return(
-		<M_body>
+		<ChatPageBody>
 			<ChatHeader_Page/>
 
-			<p>messages part</p>
+			<MessageBox/>
 			
 			<p>bottom part</p>
-		</M_body>
+		</ChatPageBody>
 	);
 }
 
