@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Message_Body = styled.div`
+const Message_List = styled.div`
 	background-color: #FFFFAF;
 	display: flex;
 
@@ -19,12 +19,14 @@ const Message_Body = styled.div`
 const Messages = () =>{
 
 
+
 	return(
-			<Message_Body>
+			<Message_List>
+				
 				<p>wah</p>
-				<p>woah</p>
-				<p>woah</p>
-			</Message_Body>
+				<p>wah</p>
+				<p>wah</p>
+			</Message_List>
 	);
 }
 

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import styled from 'styled-components';
-import ChatHeader from "./ChatHeader_Room"
+import ChatHeader from "./ChatHeader_Room";
 import Message from "./Message";
 import Messages from "./Messages";
 
@@ -13,6 +13,8 @@ const M_body = styled.body`
 `;
 
 export function ChatRoom(){
+	const [messages, setMessages] = useState([]);
+
 
 
 	return(

@@ -34,8 +34,9 @@ const MessageForm = styled.form`
 `;
 
 
-const Message = () =>{
-	
+const Message = (	) =>{
+	const [message, setMessage] = useState("");
+
 
 
 	return(
@@ -43,9 +44,10 @@ const Message = () =>{
 			<MessageForm >
 				<MessageInput 
 					placeholder="Type your message here"
-					
-
+					type="text"
+			
 				/>
+				
 	
 				<SendButton type="submit">Send</SendButton>
 			</MessageForm>
