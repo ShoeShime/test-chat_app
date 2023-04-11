@@ -27,15 +27,15 @@ const HeaderContainer = styled.div`
 `;
 
 const MessageTitle = styled.p`
-	font-size: 2em;
+	font-size: 3em;
 	font-weight: bold;
 
 	margin-top: 0;
 `;
 
 const MessageImg = styled.img`
-	width: 50px;
-	height: 50px;
+	width: 4em;
+	height: 4em;
 
 	margin-left: 15px;
 	border-radius: 50%;

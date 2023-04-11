@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Message_List = styled.div`
+const MessageList = styled.div`
 	background-color: #FFFFAF;
 	display: flex;
 
@@ -15,18 +15,53 @@ const Message_List = styled.div`
 	overflow-y: scroll;
 `;
 
+const MessageWrapper = styled.div`	
+	background-color: #1982FC;
+
+	border-radius: 25px;
+
+	width: 50%;
+
+	right: 3%;
+`;
+
+const MessageText = styled.p`
+
+	color: #FFFFFF;
+
+	text-align: left;
+
+	margin-inline-start: 5px;
+
+`;
+
+
 
 const Messages = () =>{
 
 
 
 	return(
-			<Message_List>
-				
-				<p>wah</p>
-				<p>wah</p>
-				<p>wah</p>
-			</Message_List>
+			<MessageList>
+				<MessageWrapper>
+
+					<MessageText>
+						Test 1: This is a bunch of line of text, would this work hopefully. 
+						I need to add more text horray okay a bit more, this looks kinda nice
+					</MessageText>
+
+				</MessageWrapper>
+
+				<MessageWrapper>
+
+					<MessageText>
+						Test 2: This is a bunch of line of text, would this work hopefully. 
+						I need to add more text horray okay a bit more, this looks kinda nice
+					</MessageText>
+
+				</MessageWrapper>
+
+			</MessageList>
 	);
 }
 
