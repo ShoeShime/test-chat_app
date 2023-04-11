@@ -16,6 +16,7 @@ const MessageList = styled.div`
 `;
 
 const MessageWrapper = styled.div`	
+	position: relative;
 	background-color: #1982FC;
 
 	border-radius: 25px;
@@ -31,7 +32,8 @@ const MessageText = styled.p`
 
 	text-align: left;
 
-	margin-inline-start: 5px;
+	margin-inline-start: 9px;
+	margin-inline-end: 9px;
 
 `;
 
