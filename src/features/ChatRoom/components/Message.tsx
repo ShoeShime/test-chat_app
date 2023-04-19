@@ -6,7 +6,7 @@ import {handleMessageSend} from "./Messages";
 
 const MessageContainer = styled.div`
 	position: fixed;
-	background-color: #8B4000;
+	background-color: #B5B5B5;
 
 	display: flex;
 
@@ -21,7 +21,7 @@ const MessageContainer = styled.div`
 `;
 
 const MessageForm = styled.form`
-	background-color: #FFA500;
+	background-color: #FFFFFF;
 	width: 100%;
 
 	display: flex;

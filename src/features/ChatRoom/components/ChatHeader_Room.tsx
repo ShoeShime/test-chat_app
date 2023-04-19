@@ -5,13 +5,14 @@ import styled from "styled-components";
 //Header, Top of the Page
 const Message_header = styled.header`
 	position: fixed;
-	background-color: #FFA500;
+	background-color: #B5B5B5;
 	
 	height: 10%;
 	width: 100%;
 `;
 
 const MyName = styled.p`
+
 
 	font-weight: bold;
 	font-size: 28px;
