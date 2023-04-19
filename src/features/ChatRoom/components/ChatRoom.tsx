@@ -13,16 +13,13 @@ const M_body = styled.body`
 `;
 
 export function ChatRoom(){
-	const [messages, setMessages] = useState([]);
-
-
 
 	return(
 	<>
 		<M_body>
 			<ChatHeader/>
 
-			<Messages />
+			<Messages  />
 
 			<Message/>
 		</M_body>
