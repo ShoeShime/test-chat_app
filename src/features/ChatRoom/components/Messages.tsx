@@ -2,7 +2,7 @@ import React,  {useState} from "react";
 import styled from "styled-components";
 
 const MessageList = styled.div`
-	background-color: #FFFFAF;
+	background-color: #EBF8F8;
 	display: flex;
 
 	flex-direction: column;

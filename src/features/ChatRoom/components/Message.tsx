@@ -49,18 +49,14 @@ const Message = (	) =>{
 	const handleSubmit = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) =>{
 		event.preventDefault();
 
-		try{
-			var SenderT = (document.getElementById("MessageText") as HTMLInputElement).value;
-
-			console.log(SenderT);
-			handleMessageSend(SenderT);
-
-			(document.getElementById("MessageText") as HTMLInputElement).value = "";
-		}catch(err){
-
-			console.log("This is null");
+		if(message !== ""){
+			console.log(message);
+			handleMessageSend(message);
+			setMessage("");
+		}else{
+			console.log("This message is null");
 		}
-	}
+	};
 
 	return(
 		<MessageContainer>
