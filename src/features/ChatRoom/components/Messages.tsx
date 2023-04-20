@@ -67,10 +67,11 @@ const ReceivedMessageText = styled.p`
 
 `;
 
-const Messages = () =>{
-	var [messages, setMessages] = useState<string[]>([]);
+interface MessagesProps {
+  messages: string[];
+}
 
-	messages = ["hello world", "Another message"]
+const Messages: React.FC<MessagesProps> = ({messages}) =>{
 
 	return(
 			<MessageList>

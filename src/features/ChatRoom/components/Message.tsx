@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import styled from "styled-components";
 import SendButton from "./SendButton";
 import MessageInput from "./MessageInput";
-import Messages from "./Messages";
 
 const MessageContainer = styled.div`
 	position: fixed;
@@ -34,17 +33,24 @@ const MessageForm = styled.form`
 	gap: 20px;
 `;
 
+interface MessageProp{
+	onMessageSubmit: (message: string) => void;
+}
 
-const Message = (	) =>{
-	const [message, setMessage] = useState("");
+const Message = ({onMessageSubmit}: MessageProp) =>{
+	const [messageInput, setMessageInput] = useState("");
 
 	const handleSubmit = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) =>{
 		event.preventDefault();
+		//This will allow user to display new messages
+		if(messageInput !== ""){
+			console.log(messageInput);
 
-		if(message !== ""){
-			console.log(message);
+			//Send message here
+			onMessageSubmit(messageInput);
 
-			setMessage("");
+			//Reset input element to be empty
+			setMessageInput("");
 		}else{
 			console.log("This message is null");
 		}
@@ -59,8 +65,8 @@ const Message = (	) =>{
 					id="MessageText"
 					placeholder="Type your message here"
 					type="text"
-					value={message}
-					onChange={(event) => setMessage(event.target.value)}
+					value={messageInput}
+					onChange={(event) => setMessageInput(event.target.value)}
 				/>
 					
 				<SendButton 
