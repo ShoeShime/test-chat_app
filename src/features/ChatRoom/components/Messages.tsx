@@ -67,16 +67,11 @@ const ReceivedMessageText = styled.p`
 
 `;
 
-export const HandleMessageSend = (message: string) => {
-	const [messages, setMessages] = useState<string[]>([]);
-
-	setMessages((messages) => [...messages, message]);
-};
-
 const Messages = () =>{
-	const [messages, setMessages] = useState<string[]>([]);
+	var [messages, setMessages] = useState<string[]>([]);
 
-	
+	messages = ["hello world", "Another message"]
+
 	return(
 			<MessageList>
 				<SentMessageWrapper>
@@ -99,9 +94,11 @@ const Messages = () =>{
 
 				{messages.map((message, index) => (
 					<SentMessageWrapper key={index}>
+
 						<SentMessageText>
 							{message}
 						</SentMessageText>
+
 					</SentMessageWrapper>
 				))}
 					

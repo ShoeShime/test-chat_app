@@ -1,8 +1,7 @@
 import React, {useState} from "react";
 import styled from 'styled-components';
-import ChatHeader from "./ChatHeader_Room";
-import Message from "./Message";
-import Messages from "./Messages";
+import ChatHeader from "./ChatHeaderRoom";
+import MessageSender from "./MessageSender";
 
 //Background
 const M_body = styled.body`
@@ -13,15 +12,14 @@ const M_body = styled.body`
 `;
 
 export function ChatRoom(){
+	var handlethis = "list"
 
 	return(
 	<>
 		<M_body>
 			<ChatHeader/>
 
-			<Messages/>
-
-			<Message/>
+			<MessageSender/>
 		</M_body>
 	</>
 	)
