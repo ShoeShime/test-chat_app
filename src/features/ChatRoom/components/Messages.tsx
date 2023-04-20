@@ -72,7 +72,7 @@ interface MessagesProps {
 }
 
 const Messages: React.FC<MessagesProps> = ({messages}) =>{
-	console.log(messages);
+	//console.log(messages);
 
 	return(
 			<MessageList>
