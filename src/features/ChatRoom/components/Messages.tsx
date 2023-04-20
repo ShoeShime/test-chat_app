@@ -67,14 +67,14 @@ const ReceivedMessageText = styled.p`
 
 `;
 
-export const handleMessageSend = (message: string) => {
-	
+export const HandleMessageSend = (message: string) => {
+	const [messages, setMessages] = useState<string[]>([]);
 
+	setMessages((messages) => [...messages, message]);
 };
 
 const Messages = () =>{
-	const [messages, setMessage] = useState<string[]>([]);
-
+	const [messages, setMessages] = useState<string[]>([]);
 
 	
 	return(
@@ -104,7 +104,7 @@ const Messages = () =>{
 						</SentMessageText>
 					</SentMessageWrapper>
 				))}
-
+					
 			</MessageList>
 	);
 }

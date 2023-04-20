@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import styled from "styled-components";
 import SendButton from "./SendButton";
 import MessageInput from "./MessageInput";
-import {handleMessageSend} from "./Messages";
+import HandleMessageSend from "./Messages";
 
 const MessageContainer = styled.div`
 	position: fixed;
@@ -51,7 +51,9 @@ const Message = (	) =>{
 
 		if(message !== ""){
 			console.log(message);
-			handleMessageSend(message);
+
+			HandleMessageSend(message);
+
 			setMessage("");
 		}else{
 			console.log("This message is null");

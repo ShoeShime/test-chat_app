@@ -19,7 +19,7 @@ export function ChatRoom(){
 		<M_body>
 			<ChatHeader/>
 
-			<Messages  />
+			<Messages/>
 
 			<Message/>
 		</M_body>
