@@ -44,8 +44,6 @@ const Message = ({onMessageSubmit}: MessageProp) =>{
 		event.preventDefault();
 		//This will allow user to display new messages
 		if(messageInput !== ""){
-			console.log(messageInput);
-
 			//Send message here
 			onMessageSubmit(messageInput);
 

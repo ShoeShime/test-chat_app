@@ -7,13 +7,13 @@ import Messages from "./Messages";
 
 
 const MessageSender = ()=>{
-	const [messages, setMessages] = useState([]);
+	//const [messages, setMessages] = useState([]);
+	const messages: string[] = [];
 
 	const handleMessageSubmit = (message: string) =>{
-		//console.log(message + "this is being displayed")
+		console.log(message + " this is being displayed")
 
-		
-
+		messages.push(message);
 	};
 
 	return(
