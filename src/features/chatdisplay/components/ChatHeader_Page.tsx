@@ -41,7 +41,7 @@ const MessageImg = styled.img`
 	border-radius: 50%;
 `;
 
-const ChatHeader_Page = () =>{
+const ChatHeaderPage = () =>{
 
 	return(
 		<MessageHeader>
@@ -58,4 +58,4 @@ const ChatHeader_Page = () =>{
 	);
 }
 
-export default ChatHeader_Page;
+export default ChatHeaderPage;
