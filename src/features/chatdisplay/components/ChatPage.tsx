@@ -21,9 +21,9 @@ export function ChatPage(){
 		<ChatPageBody>
 			<ChatHeaderPage/>
 
-			<MessageBox/>
 			
-			<p>Insert Navebar here</p>
+			
+			
 		</ChatPageBody>
 	);
 }

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 
 //Header, Top of the Page
-const Message_header = styled.header`
+const MessageHeader = styled.header`
 	position: fixed;
 	background-color: #B5B5B5;
 	
@@ -22,11 +22,11 @@ const ChatHeaderRoom = () =>{
 
 
 	return(
-	<Message_header>
+	<MessageHeader>
 
 		<MyName>Vendor Name</MyName>
 		
-	</Message_header>
+	</MessageHeader>
 	);
 }
 
