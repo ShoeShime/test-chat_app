@@ -14,7 +14,7 @@ const MessageHeader = styled.header`
 	justify-content: flex-end;
 
 	height: 20%;
-	max-height: 120px;
+	max-height: 135px;
 
 	padding: 0 10px;
 	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
@@ -28,6 +28,7 @@ const HeaderContainer = styled.div`
 	align-items: center;
 	justify-content: space-between;
 
+	height: 65%;
 `;
 
 const MessageTitle = styled.p`
@@ -37,7 +38,6 @@ const MessageTitle = styled.p`
 	font-size: 3em;
 	font-weight: bold;
 
-	margin-right: 20px;
 `;
 
 const UserIcon = styled.img`
@@ -45,7 +45,6 @@ const UserIcon = styled.img`
 	height: 4em;
 	width: 4em;
 
-	margin-left: 20px;
 	border-radius: 50%;
 `;
 
@@ -59,9 +58,9 @@ const ChatHeaderPage = () =>{
 
 				<UserIcon className="User-Image" src={ThumbsUp} alt="User icon"/>
 
-				<SearchMessage/>
-
 			</HeaderContainer>
+
+			<SearchMessage/>
 
 		</MessageHeader>
 	);
