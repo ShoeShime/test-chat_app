@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import ChatHeader_Page from "./ChatHeader_Page";
+import ChatHeaderPage from "./ChatHeaderPage";
 import MessageBox from "./MessageBox";
 
 
@@ -19,11 +19,11 @@ export function ChatPage(){
 
 	return(
 		<ChatPageBody>
-			<ChatHeader_Page/>
+			<ChatHeaderPage/>
 
 			<MessageBox/>
 			
-			<p>bottom part</p>
+			<p>Insert Navebar here</p>
 		</ChatPageBody>
 	);
 }
