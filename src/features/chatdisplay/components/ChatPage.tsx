@@ -7,7 +7,7 @@ import MessageBox from "./MessageBox";
 //Background
 const ChatPageBody = styled.body`
 	position: fixed;
-	background-color: #d2d2d4;
+	background-color: #FFFFFF;
 
 
 	height: 100%;
@@ -21,7 +21,7 @@ export function ChatPage(){
 		<ChatPageBody>
 			<ChatHeaderPage/>
 
-			
+			<MessageBox/>
 			
 			
 		</ChatPageBody>

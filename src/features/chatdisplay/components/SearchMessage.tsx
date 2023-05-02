@@ -31,7 +31,7 @@ const SearchInput = styled.input`
 	width: 100%;
 
 	::placeholder{
-		color: #128923;
+		color: #333333;
 	}
 `;
 

@@ -5,7 +5,7 @@ import ThumbsUp from "../misc/ThumbsUp.jpg";
 
 //Header, The Top of the Page
 const MessageHeader = styled.header`
-	background-color: #FFA500;
+	background-color: #FFFFFF;
 
 	display: flex;
 	flex-direction: column;
@@ -13,7 +13,7 @@ const MessageHeader = styled.header`
 	align-items: strech;
 	justify-content: flex-end;
 
-	height: 20%;
+	height: 30%;
 	max-height: 135px;
 
 	padding: 0 10px;
@@ -28,7 +28,7 @@ const HeaderContainer = styled.div`
 	align-items: center;
 	justify-content: space-between;
 
-	height: 65%;
+	height: 50%;
 `;
 
 const MessageTitle = styled.p`
@@ -54,6 +54,7 @@ const ChatHeaderPage = () =>{
 		<MessageHeader>
 
 			<HeaderContainer>
+
 				<MessageTitle className="Title">Message</MessageTitle>
 
 				<UserIcon className="User-Image" src={ThumbsUp} alt="User icon"/>
