@@ -41,10 +41,12 @@ const Message = ({onMessageSubmit}: MessageProp) =>{
 	const [messageInput, setMessageInput] = useState("");
 
 	const handleSubmit = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) =>{
-		event.preventDefault();
-		//This will allow user to display new messages
+		event.preventDefault();		//Prevents webpage from refreshing
+
+		//This will allow user to display new messages 
+		//if there exist text in the input box
 		if(messageInput !== ""){
-			//Send message here
+			//Sending a message
 			onMessageSubmit(messageInput);
 
 			//Reset input element to be empty
@@ -56,7 +58,6 @@ const Message = ({onMessageSubmit}: MessageProp) =>{
 
 	return(
 		<MessageContainer>
-			
 			<MessageForm>
 
 				<MessageInput 
@@ -73,7 +74,6 @@ const Message = ({onMessageSubmit}: MessageProp) =>{
 				>
 						Send
 				</SendButton>
-
 
 			</MessageForm>
 		</MessageContainer>

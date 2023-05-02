@@ -9,7 +9,6 @@ import {ChatRoom} from './features/ChatRoom/components/ChatRoom';
 function App() {
 
 
-  
   return (
 
     <ChatRoom/>

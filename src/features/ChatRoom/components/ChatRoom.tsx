@@ -12,7 +12,6 @@ const M_body = styled.body`
 `;
 
 export function ChatRoom(){
-	var handlethis = "list"
 
 	return(
 	<>
