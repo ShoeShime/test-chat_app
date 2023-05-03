@@ -5,7 +5,9 @@ import CatPicture from "../misc/ThumbsUp.jpg";
 const Convo = styled.div`
 
 	display: flex;
+
 	align-items: center;
+
 	padding: 16px;
 
 `;
@@ -28,21 +30,44 @@ const ProfilePic = styled.img`
 
 const TextContainer = styled.div`
 
-	flex-grow: 1;
-
+	display: flex;
+	flex-wrap: wrap;
 
 `;
 
 const MessageName = styled.h2`
 
+	color: #333333;
+
+	flex-basis: 50%;
+	flex-grow: 1;
+
+	font-size: 20px;
+	font-weight: bold;
 
 `;
 
 const Timestamp = styled.p`
 
+	color: #333333;
+
+	flex-basis: 50%;
+	flex-grow: 1;
+
+
+	font-size: 16px;
+	font-weight: bold;
+
 `;
 
 const TextMessage = styled.p`
+
+	color: #666666;
+
+	flex-basis 100%;
+	flex-grow: 1;
+
+	font-size: 14px;
 
 `;
 
@@ -77,15 +102,21 @@ const Conversation = () =>{
 				</PictureContainer>
 
 				<TextContainer>
-					<MessageName>
-						Cesar Magana
-					</MessageName>
-					<Timestamp>
-						11:00 AM
-					</Timestamp>
-					<TextMessage>
-						I want IceCream
-					</TextMessage>
+
+						<MessageName>
+							Cesar
+						</MessageName>
+						
+						<Timestamp>
+							11:00 AM
+						</Timestamp>
+					
+				
+						<TextMessage>
+							I want IceCream
+						</TextMessage>
+					
+
 				</TextContainer>
 
 			</Convo>

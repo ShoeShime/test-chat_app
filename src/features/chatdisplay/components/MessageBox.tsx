@@ -20,11 +20,19 @@ const MessageBox = () =>{
 
 
 	return(
-		<MessageWrapper>
+		<>
+			<MessageWrapper>
 
-			<Conversation/>
+				<Conversation/>
 
-		</MessageWrapper>
+			</MessageWrapper>
+
+			<MessageWrapper>
+
+				<Conversation/>
+
+			</MessageWrapper>
+		</>
 	);
 }
 

@@ -54,11 +54,8 @@ const ChatHeaderPage = () =>{
 		<MessageHeader>
 
 			<HeaderContainer>
-
 				<MessageTitle className="Title">Message</MessageTitle>
-
 				<UserIcon className="User-Image" src={ThumbsUp} alt="User icon"/>
-
 			</HeaderContainer>
 
 			<SearchMessage/>
