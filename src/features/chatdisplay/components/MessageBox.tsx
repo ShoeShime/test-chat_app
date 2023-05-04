@@ -1,38 +1,41 @@
 import React from "react";
 import styled from "styled-components";
 import Conversation from "./Conversation";
+import CatPicture from "../misc/ThumbsUp.jpg";
 
 const MessageWrapper = styled.div`
-	background-color: #d2d2d4;
+	background-color: #FFFFFF;
 
-	display: flex;
-	flex-direction: column;
 
-	margin: 10px;
-
-	border-radius: 5%;
-
-	height: 125px;
 
 `; 
+
+//implement array; currently not in use
+const conversations: Conversation[] = [
+	{
+		id: 1,
+		profilePic: CatPicture,
+		name: "Cesar Magana",
+		lastmessage: "I want icecream",
+		timestamp: new Date(),
+		isSeen: true
+	}
+];
+
 
 const MessageBox = () =>{
 
 
 	return(
-		<>
-			<MessageWrapper>
+		<MessageWrapper className="Inbox">
 
-				<Conversation/>
+			<Conversation/>
 
-			</MessageWrapper>
+			<Conversation/>
 
-			<MessageWrapper>
+			<Conversation/>
 
-				<Conversation/>
-
-			</MessageWrapper>
-		</>
+		</MessageWrapper>
 	);
 }
 

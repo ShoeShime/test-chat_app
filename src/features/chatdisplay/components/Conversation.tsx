@@ -3,19 +3,34 @@ import styled from "styled-components";
 import CatPicture from "../misc/ThumbsUp.jpg";
 
 const Convo = styled.div`
+	background-color: #d2d2d4;
+
+	display: flex;
+
+	border-radius: 10px;
+
+	margin: 10px;
+
+	min-height: 100px;
+
+	cursor: pointer;
+	transition: all 0.2 ease-in-out;
+
+	&:hover{
+		background-color: #f5f5f5;
+	}
+
+`;
+
+const PictureContainer = styled.div`
+
 
 	display: flex;
 
 	align-items: center;
 
-	padding: 16px;
-
-`;
-
-const PictureContainer = styled.div`
-	
-	flex-basis: 60px;
-	margin-right: 16px;
+	margin-left: 5px;
+	margin-right: 5px
 
 `;
 
@@ -30,20 +45,33 @@ const ProfilePic = styled.img`
 
 const TextContainer = styled.div`
 
-	display: flex;
-	flex-wrap: wrap;
+	width: 100%;
+
+	margin-right: 7.5px;
+	margin-left: 2.5px;
 
 `;
 
-const MessageName = styled.h2`
+const Container_1 = styled.div`
+
+	display: flex;
+	justify-content: space-between;
+
+	align-items: center;
+
+	margin-top: 15px;
+
+`;
+
+const MessageName = styled.p`
 
 	color: #333333;
 
-	flex-basis: 50%;
-	flex-grow: 1;
 
 	font-size: 20px;
 	font-weight: bold;
+
+	margin: 0px;
 
 `;
 
@@ -51,12 +79,11 @@ const Timestamp = styled.p`
 
 	color: #333333;
 
-	flex-basis: 50%;
-	flex-grow: 1;
 
-
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: bold;
+
+	margin: 0px;
 
 `;
 
@@ -64,10 +91,8 @@ const TextMessage = styled.p`
 
 	color: #666666;
 
-	flex-basis 100%;
-	flex-grow: 1;
-
 	font-size: 14px;
+
 
 `;
 
@@ -80,42 +105,28 @@ interface Conversation{
 	isSeen: boolean
 }
 
-const conversations: Conversation[] = [
-	{
-		id: 1,
-		profilePic: CatPicture,
-		name: "Cesar Magana",
-		lastmessage: "I want icecream",
-		timestamp: new Date(),
-		isSeen: true
-	}
-];
-
 const Conversation = () =>{
 
 	return(
 		
-			<Convo>
+			<Convo className="Conversation">
 
-				<PictureContainer>
-					<ProfilePic  className="profile-pic" src={CatPicture}/>
+				<PictureContainer className="Profile_Pic">
+					<ProfilePic  className="Picture" src={CatPicture}/>
 				</PictureContainer>
 
-				<TextContainer>
-
-						<MessageName>
+				<TextContainer className="Inbox_Info">
+					
+					<Container_1>
+						<MessageName className="UserName">
 							Cesar
 						</MessageName>
 						
-						<Timestamp>
+						<Timestamp className="TimeStamp">
 							11:00 AM
 						</Timestamp>
-					
-				
-						<TextMessage>
-							I want IceCream
-						</TextMessage>
-					
+					</Container_1>
+
 
 				</TextContainer>
 
