@@ -57,8 +57,6 @@ const Container_1 = styled.div`
 	display: flex;
 	justify-content: space-between;
 
-	align-items: center;
-
 	margin-top: 15px;
 
 `;
@@ -83,7 +81,16 @@ const Timestamp = styled.p`
 	font-size: 15px;
 	font-weight: bold;
 
-	margin: 0px;
+	margin: 3px 0px 0px 0px;
+
+`;
+
+const Container_2 = styled.div`
+
+	display: flex;
+	justify-content: space-between;
+
+	margin: 0px 0px 0px 0px;
 
 `;
 
@@ -93,6 +100,7 @@ const TextMessage = styled.p`
 
 	font-size: 14px;
 
+	margin: 5px 0px 0px 5px;
 
 `;
 
@@ -127,6 +135,13 @@ const Conversation = () =>{
 						</Timestamp>
 					</Container_1>
 
+					<Container_2>
+						<TextMessage>
+							I want Icecream!
+						</TextMessage>
+
+
+					</Container_2>
 
 				</TextContainer>
 
